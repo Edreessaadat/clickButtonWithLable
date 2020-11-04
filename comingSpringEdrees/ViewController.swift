@@ -111,49 +111,6 @@ class ViewController: UIViewController {
         displayStateToState.shadowColor = .brown
     }
     
-    // call func in func
-    
-    func caller(name: String, hide:Bool) -> String {
-        if hide {
-            return diffCaller(Na: name, callerName: false)
-        } else {
-            return diffCaller(Na: name, callerName: true)
-        }
-        
-    }
-    func diffCaller(Na:String, callerName:Bool) -> String {
-        
-        if callerName {
-            return Na + " Number is hide "
-        } else {
-            return Na + " Number is not hide "
-        }
-    }
-    
 }
-// extension of the class viewController and sort of the number insertion
-extension ViewController {
-    
-    func insertionSort() {
-        var arr = [5,3,4,2,1,6]
-        var j = 0
-        var key = 0
-        
-        for i in 1..<arr.count {
-            
-            j = i
-            key = arr[i]
-            for j in stride(from: j, to: 0, by: -1) {
-                if arr[j-1] > key {
-                    var temp = 0
-                    temp = 0
-                    temp = arr[j]
-                    arr[j] = arr[j-1]
-                    arr[j-1] = temp
-                }
-            }
-            print(arr)
-        }
-    }
-}
+
 
