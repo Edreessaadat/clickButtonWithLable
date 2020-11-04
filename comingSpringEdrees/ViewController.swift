@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         // call the func
         caller(name: "Jawid", hide: false)
         insertionSort()
-        selectionSort()
+       
         
     }
     
@@ -154,31 +154,6 @@ extension ViewController {
             }
             print(arr)
         }
-    }
-}
-
-// extension of the viewControler and sort of the number by selection
-extension ViewController {
-    
-    func selectionSort() {
-        
-        var arr = [3,2,1,4,5,7,6]
-        var min = 0
-        var j = 0
-        for i in 0..<arr.count {
-            min = i
-            j = i + 1
-            for j in stride(from: j, to: arr.count, by: 1) {
-            
-                if (arr[min]) > arr[j] {
-                    min = j
-                }
-            }
-            let temp = arr[i]
-            arr[i] = arr[min]
-            arr[min] = temp
-        }
-        print(arr)
     }
 }
 
