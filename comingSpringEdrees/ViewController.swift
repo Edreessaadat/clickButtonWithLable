@@ -65,11 +65,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // call the func
-        caller(name: "Jawid", hide: false)
-        insertionSort()
-       
-        
     }
     
     @IBAction func FirstButtonTapped(_ sender: Any) {
